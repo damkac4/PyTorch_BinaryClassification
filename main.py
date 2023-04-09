@@ -5,8 +5,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from torch import nn
 from helper_functions import plot_predictions, plot_decision_boundary
-import requests
-from pathlib import Path
+
 
 
 # Make 1000 samples
@@ -54,7 +53,7 @@ class CircleModelV2(nn.Module):
         self.layer_1 = nn.Linear(in_features=2, out_features=10)
         self.layer_2 = nn.Linear(in_features=10, out_features=10)
         self.layer_3 = nn.Linear(in_features=10, out_features=1)
-        self.relu = nn.ReLU() # <- add in ReLU activation function
+        self.relu = nn.ReLU()  # <- add in ReLU activation function (non-linear actviation function)
 
 
     def forward(self, x):
