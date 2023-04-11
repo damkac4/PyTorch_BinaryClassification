@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from torch import nn
-from helper_functions import plot_predictions, plot_decision_boundary
+from helper_functions import plot_decision_boundary
 
 
 
@@ -29,7 +29,7 @@ print(circles)
 plt.scatter(x=X[:, 0],
             y=X[:, 1],
             c=y,
-            cmap=plt.cm.RdYlBu);
+            cmap=plt.cm.RdYlBu)
 plt.show()
 
 # Turn data into tensors
